@@ -1,0 +1,152 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ html {
+  font-size: 90%;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-nav {
+  display: none;
+}
+
+/* =========================
+   HIKE IMAGES
+   ========================= */
+
+.hike-image {
+  display: block;
+
+  width: 100%;
+  max-width: 760px;
+  max-height: 460px;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  object-fit: cover;
+
+  border: 1px solid var(--hiking-border-color);
+  border-radius: 12px;
+}
+
+.hike-image--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hike-image--right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.hike-image--wide {
+  max-width: 1000px;
+}
+
+.hike-image--small {
+  max-width: 520px;
+}
+
+.hike-image-caption {
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
+
+  color: var(--hiking-muted-text);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* =========================
+   Total Walking
+   ========================= */
+
+.total-walk {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;  
+  padding: 0.9rem 1.2rem;
+  background: var(--hiking-soft-background);
+  border: 1px solid var(--hiking-border-color);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 10px;
+}
+
+.total-walk span {
+  color: var(--hiking-muted-text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.total-walk strong {
+  font-size: 1.2rem;
+}
+
+/* =========================
+   CATEGORY BOXES
+   ========================= */
+
+.theme-doc-card-container {
+  padding: 0.6rem 0.8rem !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Hide icon */
+.theme-doc-card-icon {
+  display: none !important;
+}
+
+/* Hide description */
+.theme-doc-card-description {
+  display: none !important;
+}
+
+/* Compact title */
+.theme-doc-card-title {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+/* Remove extra heading spacing */
+.theme-doc-card-container h2 {
+  margin: 0 !important;
+}
+
+/* Make each generated card column only as wide as needed */
+article[class*='colCardListItem'] {
+  flex: 0 0 auto !important;
+  max-width: none !important;
+  width: auto !important;
+}
